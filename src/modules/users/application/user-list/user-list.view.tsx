@@ -7,7 +7,7 @@ const UserListView = () => {
 	const { users, filteredUsers } = useUsers()
 
 	return (
-		<div className="bg-white shadow-md w-2/5 p-8 rounded-xl">
+		<div className="bg-white shadow-md md:w-2/5 sm:w-3/4 p-8 rounded-xl">
 			<h1 className="text-2xl font-bold">User List</h1>
 			<hr className="mt-2" />
 			<SearchUsersFormView />
