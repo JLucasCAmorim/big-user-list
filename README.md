@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Description
 
-This is a card game where you can put your name and then you will be redirected to a page where you will be able to see the cards and you can draw more 3 cards, and those cards are gotten from nekos.best API.
+In this project, we are using using an API with a big user list and rendering it with ReactJS.
 
 ## Getting Started
 
