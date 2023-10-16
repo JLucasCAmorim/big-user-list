@@ -2,9 +2,13 @@ export interface User {
 	id: string
 	name: string
 	age: number
-	created_at: Date
+	registered: {
+		date: Date
+	}
 }
 
 export interface UserAPIResponse {
-	data: User[]
+	data: {
+		results: User[]
+	}
 }

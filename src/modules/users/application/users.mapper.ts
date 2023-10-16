@@ -5,6 +5,6 @@ export const mapUserToApplicationModel = (users: User[]): User[] => {
 		id: user.id,
 		name: user.name,
 		age: user.age,
-		created_at: user.created_at,
+		registered: user.registered
 	}))
 }

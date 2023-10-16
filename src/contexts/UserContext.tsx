@@ -25,7 +25,6 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
 	const setUsersToState = useCallback(
 		(users: User[]) => {
-			console.log("oi")
 			setUsers(users)
 			addToast({
 				title: "User loaded",
@@ -58,8 +57,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
 	useEffect(() => {
 		if (data) {
-			console.log("test", data)
-			setUsersToState(data.data)
+			setUsersToState(data.data.results)
 		}
 	}, [data, setUsersToState])
 

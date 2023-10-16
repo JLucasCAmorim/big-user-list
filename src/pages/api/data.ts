@@ -4,7 +4,7 @@ import { UserAPIResponse } from "../../modules/users/dtos/user.dto"
 
 export default function api(req: NextApiRequest, res: NextApiResponse) {
 	axios
-		.get("https://random-persons.herokuapp.com/users", {
+		.get("https://randomuser.me/api/?results=5000", {
 			maxContentLength: 100000000,
 			maxBodyLength: 1000000000,
 		})

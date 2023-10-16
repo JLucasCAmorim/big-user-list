@@ -23,7 +23,7 @@ describe("[users] unit tests", () => {
 					id: infraModel.id,
 					name: infraModel.name,
 					age: infraModel.age,
-					created_at: infraModel.created_at,
+					registered: infraModel.registered,
 				})
 			)
 
