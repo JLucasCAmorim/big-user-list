@@ -17,6 +17,7 @@ export default function api(req: NextApiRequest, res: NextApiResponse) {
 			console.log(data)
 			return res.json(data)
 		})
+		.catch((error) => console.error(error)); 
 
 	return
 }
