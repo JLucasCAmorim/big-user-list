@@ -13,7 +13,7 @@ export const config = {
 
 export default async function api(req: NextApiRequest, res: NextApiResponse) {
 	try {
-		const response = await axios.get("https://randomuser.me/api?results=1000", {
+		const response = await axios.get("https://randomuser.me/api?results=100", {
 			headers: {
 				'Content-type': 'application/json',
 				'MaxContentLength': 100000000,
