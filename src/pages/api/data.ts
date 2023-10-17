@@ -5,9 +5,9 @@ import { UserAPIResponse } from "../../modules/users/dtos/user.dto"
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: '100mb',
+      sizeLimit: false,
     },
-	responseLimit: '100mb',
+	responseLimit: false,
   },
 }
 
