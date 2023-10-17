@@ -4,7 +4,7 @@ import { UserAPIResponse } from "../../modules/users/dtos/user.dto"
 
 export default async function api(req: NextApiRequest, res: NextApiResponse) {
 	try {
-	const response = await axios.get("https://randomuser.me/api/?results=5000", {
+	const response = await axios.get("https://randomuser.me/api?results=5000", {
 		headers: {
 			'Content-type': 'application/json'
 		}
