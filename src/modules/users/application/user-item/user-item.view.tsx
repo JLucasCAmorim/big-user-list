@@ -6,6 +6,7 @@ interface UserItemProps {
 	style: CSSProperties
 }
 const UserItem = ({ user, style }: UserItemProps) => {
+	console.log(user)
 	return (
 		<li
 			style={{
@@ -15,7 +16,7 @@ const UserItem = ({ user, style }: UserItemProps) => {
 			className="bg-blue-50 px-4 py-2 rounded-full shadow mb-4 relative focus:outline-none"
 		>
 			<span>
-				Name: {user.name} | Age: {user.age}
+				Email: {user.email} | Phone: {user.phone}
 			</span>
 		</li>
 	)
