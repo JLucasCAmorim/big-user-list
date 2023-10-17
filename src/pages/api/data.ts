@@ -4,15 +4,15 @@ import { UserAPIResponse } from "../../modules/users/dtos/user.dto"
 
 export default async function api(req: NextApiRequest, res: NextApiResponse) {
 	try {
-	const response = await axios.get("https://randomuser.me/api?results=5000", {
-		headers: {
-			'Content-type': 'application/json'
-		}
-	})
+		const response = await axios.get("https://randomuser.me/api?results=5000", {
+			headers: {
+				'Content-type': 'application/json'
+			}
+		})
 
-	console.log(response)
+		console.log(response)
 
-	return res.json(response.data)
+		return res.json(response.data)
 	} catch(error) {
 		console.error(error)
 		throw new Error("Request failed.")
