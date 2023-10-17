@@ -8,7 +8,5 @@ export interface User {
 }
 
 export interface UserAPIResponse {
-	data: {
-		results: User[]
-	}
+	results: User[]
 }

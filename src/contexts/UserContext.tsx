@@ -57,7 +57,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
 	useEffect(() => {
 		if (data) {
-			setUsersToState(data.data.results)
+			setUsersToState(data.results)
 		}
 	}, [data, setUsersToState])
 

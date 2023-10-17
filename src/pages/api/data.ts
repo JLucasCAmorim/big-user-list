@@ -21,8 +21,6 @@ export default async function api(req: NextApiRequest, res: NextApiResponse) {
 			}
 		})
 
-		console.log(response)
-
 		return res.json(response.data)
 	} catch(error) {
 		console.error(error)
