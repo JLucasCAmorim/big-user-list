@@ -13,6 +13,8 @@ export class UsersInMemory implements UsersOutput {
 			id: infraModel.id,
 			name: infraModel.name,
 			age: infraModel.age,
+			email: infraModel.email,
+			phone: infraModel.phone,
 			registered: infraModel.registered
 		}))
 	}
