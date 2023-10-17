@@ -3,10 +3,12 @@ import axios from "axios"
 import { UserAPIResponse } from "../../modules/users/dtos/user.dto"
 
 export const config = {
-	api: {
-	  responseLimit: '50mb',
-	},
-  }
+  api: {
+    bodyParser: {
+      sizeLimit: '10mb',
+    },
+  },
+}
 
 export default async function api(req: NextApiRequest, res: NextApiResponse) {
 	try {
