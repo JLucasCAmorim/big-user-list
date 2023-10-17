@@ -4,7 +4,11 @@ import { UserAPIResponse } from "../../modules/users/dtos/user.dto"
 
 export default function api(req: NextApiRequest, res: NextApiResponse) {
 	axios
-		.get("https://randomuser.me/api/?results=5000")
+		.get("https://randomuser.me/api/?results=5000", {
+			headers: {
+				'Content-type': 'application/json'
+			}
+		})
 		.then((response) => {
 			console.log(response)
 			return response.data
