@@ -8,7 +8,10 @@ export default function api(req: NextApiRequest, res: NextApiResponse) {
 			maxContentLength: 100000000,
 			maxBodyLength: 1000000000,
 		})
-		.then((response) => response.data)
+		.then((response) => {
+			console.log(response)
+			return response.data
+		})
 		.then((data: UserAPIResponse) => {
 			console.log(data)
 			return res.json(data)
