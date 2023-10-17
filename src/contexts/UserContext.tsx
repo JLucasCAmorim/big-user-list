@@ -42,8 +42,8 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 				if (query) {
 					const usersFiltered = users.filter(
 						(userItem) =>
-							userItem.name.search(term) !== -1 ||
-							userItem.age.toString().search(term) !== -1
+							userItem.email.search(term) !== -1 ||
+							userItem.phone.toString().search(term) !== -1
 					)
 
 					setFilteredUsers(usersFiltered)
